@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pandas
+numpy
+python-multipart
+pydantic
+google-generativeai
+jinja2
+openpyxl
+python-dotenv
+fuzzywuzzy
+python-Levenshtein
+python-jose[cryptography]
+passlib[bcrypt]

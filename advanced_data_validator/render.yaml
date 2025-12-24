@@ -1,0 +1,15 @@
+# Render.com deployment configuration
+# This file tells Render how to deploy your app
+
+services:
+  - type: web
+    name: nyx-data-validator
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false  # You'll set this in Render dashboard
+      - key: PYTHON_VERSION
+        value: 3.11

@@ -1,0 +1,102 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment variables - IMPORTANT: never commit API keys!
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Frontend build output (optional - can include if you want to serve from git)
+# Uncomment the next line to exclude build files
+# frontend/dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temp files
+tmp/
+temp/
+*.tmp
+*.temp
+uploads/
+sessions/
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Package lock files (optional - some prefer to commit these)
+# package-lock.json
+# yarn.lock
+
+# Gemini test file (contains API key input)
+gemini_test.html
+
+# Uploaded data files (user uploads)
+*.csv
+*.xlsx
+*.xls
+
+# Reports generated
+*.html
+!frontend/index.html
+!frontend/dist/index.html
+!openai_test.html

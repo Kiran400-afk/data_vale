@@ -1,0 +1,42 @@
+Total cells in ads platform notebook: 24
+
+================================================================================
+CELL 10:
+================================================================================
+Type: code
+Code length: 1736 characters
+First 1000 chars:
+print("="*80)
+print(f"OVERALL TOTALS COMPARISON (with {THRESHOLD_PERCENT}% threshold)")
+print("="*80)
+
+# Calculate totals
+growth_totals = growth_df[['Amount spent (INR)', 'Impressions', 'Link clicks', 'Purchases', 'Purchases conversion value']].sum()
+gold_totals = gold_df[['Amount spent (INR)', 'Impressions', 'Link clicks', 'Purchases', 'Purchases conversion value']].sum()
+
+# Create comparison dataframe
+overall_comparison = pd.DataFrame({
+    'Metric': ['Amount Spent (INR)', 'Impressions', 'Link Clicks', 'Purchases', 'Conversion Value'],
+    'Growth': [
+        growth_totals['Amount spent (INR)'],
+        growth_totals['Impressions'],
+        growth_totals['Link clicks'],
+        growth_totals['Purchases'],
+        growth_totals['Purchases conversion value']
+    ],
+    'Gold': [
+        gold_totals['Amount spent (INR)'],
+        gold_totals['Impressions'],
+        gold_totals['Link clicks'],
+        gold_totals['Purchases'],
+        gold_totals['Purchases conversion value']
+    ],
+})
+
+
+
+================================================================================
+CELL 11:
+================================================================================
+Type: markdown
+Content: ## Step 5: Validation by Date
